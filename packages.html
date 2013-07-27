@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Elegant Accordion with jQuery and CSS3" />
+        <meta name="keywords" content="jquery, slide out,accordion, css3, fadeout, fadein, elegant, fancy, box shadow"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-family:Arial;
+                background:#fff url(pattern.png) repeat top left;
+            }
+            a{
+                color:#444;
+            }
+            a:hover{
+                color:#999;
+            }
+            .title{
+                width:500px;
+                height:152px;
+                position:absolute;
+                top:0px;
+                left:0px;
+                background:transparent url(title.png) no-repeat top left;
+            }
+            a.back{
+                background:transparent url(back.png) no-repeat top left;
+                position:fixed;
+                width:150px;
+                height:27px;
+                outline:none;
+                bottom:0px;
+                left:0px;
+            }
+            #content{
+                margin:0 auto;
+            }
+            .reference{
+                clear:both;
+                top:300px;
+                left:0px;
+                position:absolute;
+                text-align:right;
+                width:400px;
+                padding:20px;
+                background-color:#fff;
+                -moz-box-shadow:1px 3px 15px #ddd;
+                -webkit-box-shadow:1px 3px 15px #ddd;
+                box-shadow:1px 3px 15px #ddd;
+            }
+            .reference p a{
+                text-transform:uppercase;
+                text-shadow:1px 1px 1px #fff;
+                color:#666;
+                text-decoration:none;
+                font-size:10px;
+            }
+            .reference p a:hover{
+                color:#333;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="content">
+            <div class="title"></div>
+            <header>
+				<h1>Adrelin tour</h1>
+				<span>Packages</span>
+	    </header>
+            
+            <div class="navigation" id="nav">               
+                <div class="item packages">
+                    <img src="images/bg_camera.png" alt="" width="69" height="69" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="travelPrice.html">Prices</a></li>
+                        <li><a href="termscons.html">Terms and Condition</a></li>
+			<li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>               
+                </div>
+            
+            <ul class="accordion" id="accordion">
+                <li class="bg1">
+                    <div class="heading">J</div>
+                    <div class="bgDescription"></div>
+                    <div class="description">
+                        <h2>Bromo Tour</h2>
+                        <p>
+                               Day 1: Airport/Train station-Handcraft centre Tangulangin Sidoarjo                        
+                        </p>
+                        <p>
+                            Arrived at Juanda airport / Surabaya train station, after meet and greet travellers will be fetched by guide and
+                            imediately brought to the centre of handcraft for shoes and bags at Tangulangin, Sidoarjo. After shopping will continue
+                            to visit Bromo, luch will be at Rawon nguling restaurant at Probolinggo, will stop for a while at Sukapura to exchange
+                            vehicle JEEP (mini 4WD) // HARDTOP. Travellers will stay at Lava View Lodge Bromo Hotel, after check in will continue with
+                            free activity.
+                        </p>
+                        <p>
+                            Day 2: Bromo Sunrise - Savanah - Rafting at Pekalen river - Airport
+                        </p>
+                        <p>
+                            Participants will be sent towards climbing the hills on a JEEP / Hardtop to see the beauty of sunrise and panoramic plateau Tengger views. Then sand down across the ocean to see Bromo crater closer by crossing  245 steps. Further will go towards a green hilly area  which looks green throughout the year, ordinary people call "Hill Teletubbies" perhaps because it resembles a picture landscapenya the green hills where Teletubbies play in the movie series. Back to the hotel at 8.00 am for breakfast and relax for a moment before travel and continued toward areas Rafting (whitewater rafting) NOAR'S, Pekalen River - Probolinggo. Arriving at River Pekalen (Basecamp NOAR'S rafting), previous participants get instruction from instructor Rafting NOAR'S, on which procedures to do white water rafting and more. Rafting will commence around 3-4 hours. Finish Rafting (whitewater rafting), participants return to Basecamp NOAR'S to enjoy Lunch meal. Towards the evening will return back Surabaya arriving at night and directly go to hotels, then check-in and rest.
+                        </p>
+                        
+                        
+                        <p>Day 3: Surabaya</p>
+                        <p>
+                           Free events after brunch at the Hotel, afterwards Guide will fetch you to drive you to  Air Juanda Airport, Sidoarjo / / Railway Station Surabaya (Gubeng / Pasar Turi), to return to Your Hometown.
+                        </p>
+                    </div>
+                </li>
+                <li class="bg2">
+                    <div class="heading">Manado Tour</div>
+                    <div class="bgDescription"></div>
+                    <div class="description">
+                        <h2>Manado Tour</h2>
+                         <p>
+                            Day 1: Arrival-Manado-Lembeh Hills Resort                            
+                        </p>
+                         <p>-Arrive at Sam Ratulangi airport at Manado city.</p>
+                         <p>-Visit Lembeh Hills Resort at Bitung.</p>
+                         <p>-Free session after check in at Lembeh Hills Resort.</p>
+                        <p>
+                            Day 2: Lembeh Hills Resort - Free and Easy Program                                      
+                        </p>
+                        <p>-After breakfast, free session at Lembeh Hills Resort</p>
+
+                        <p>-Diving and snorkeling.</p>
+                        <p>    
+                            Day 3: Same as Day 2
+                        </p>
+                        <p>&nbsp;</p>
+                       <p>Day 4: Bitung Tour</p>
+                        
+                        <p>-City tour to Bitung after breakfast and check out</p>
+                        
+                        <p>-visit Naimundung Animal Collection</p>
+                        
+                         <p>-Visit port of Bitung which is one of the best port in Indonesia.</p>
+                         
+                         <p>-Transfer to Manado city then check in at the hotel continued with free session</p>
+                       <p>&nbsp;</p>
+                        <p>                       
+                            Day 5: Minahasa Tour                           
+                        </p>
+                        
+                        <p>-Visit to Tinoor village.</p>
+                        <p>-Visit Prayer Hills, Pagoda Tower, and Woloan village at Tomohon city.</p>
+                        <p>-Have lunch at a local restaurant at Danau Tondano</p>
+                        <p>-Visit Pulutan village, Linow Lake, Kasih Hills, Kawangkoan, and the statue of Jesus at Manado.</p>
+                        <p>-At 5 pm return to the hotel and dinner at 7 pm</p>                   
+                        <p>-Breakfast</p>
+                        <p>-Free session</p>
+                        <p>-Guided to Sam Ratulangi international airport, Manado to return to your home.</p>
+                        
+                    </div>
+
+                </li>
+                <li class="bg3">
+                    <div class="heading">Raja ampat tour</div>
+                    <div class="bgDescription"></div>
+                    <div class="description">
+                        <h2>Raja ampat</h2>
+                        <p>Day 1: Jakarta / Surabaya - Makassar - Sorong</p>
+                        <p>Towards the evening will visit town alone via Makassar through: Jakarta(Soekarno-Hatta), Surabaya(Juanda Airport). Arrive in Makassar for Transit, early morning will resume flight to Sorong</p>
+                        <p>Day 2: Sorong - City Tour</p>
+                        <p>Arriving early morning in Sorong, check in at the hotel and around the city Membarno slide, visiting the beach, and then slide down to overnight in Sorong</p>
+                        <p>Day 3: Sorong - Waisai(Raja Ampat)</p>
+                        <p>After lunch will go to Sorong harbor crossing, and using fast boats Marina express (AC) to Raja Ampat Waisai then picked to head Waiwo Dive Resort and enjoy the sea in Central Sunset (Strait Dampir)  </p>
+                        <p>Day 4: Raja Ampat Snorkeling and Diving (Part 01)</p>
+                        <p>
+                            After lunch, will start the adventure in kepulauan Raja ampat, left towards Wawiyai waiwo resort, Gulf Kabui to see  the floating island,
+                            Kali king, take alook at the history of Raja Ampat, see ancient tombs and Rock painting. Continuing Arborek island lunch, then headed Manta point
+                            and diving and snorkeling with "Manta". After that will visit the island of Koh for diving and snorkeling.
+                        </p>
+                        <p>Day 5: Raja Ampat Snorkeling and Diving (Part 02)</p>
+                        <p>
+                            After lunch, will start the adventure in kepulauan Raja ampat, left towards Wawiyai waiwo resort, Gulf Kabui to see  the floating island,
+                            Kali king, take alook at the history of Raja Ampat, see ancient tombs and Rock painting. Continuing Arborek island lunch, then headed Manta point
+                            and diving and snorkeling with "Manta". After that will visit the island of Koh for diving and snorkeling.
+                        </p>
+                        <p></p>
+                    </div>
+
+                </li>
+                <li class="bg4 bleft">
+                    <div class="heading">East Kalimantan Tour</div>
+                    <div class="bgDescription"></div>
+                    <div class="description">
+                        <h2>East Kalimantan Tour</h2>
+                        <p>
+                            Day 1: Arrival-Balikpapan
+                            
+                            
+                        </p>
+                        <p>-Arrive at Sepinggan international airport, Balikpapan city.</p>
+                        <p>-Transfer to the hotel, free session after check in.</p>
+                        <p>
+                            Day 2: Balikpapan tour    
+                        </p>
+                        <p>-Visit Bangkirai island, tropical forest  in the east of Kalimantan.</p>
+                        <p>-Visit the Perjuangan Rakyat Monument, Tugu Australia, and Tugu Peringatan Jepang. </p>
+                        <p>-Visit Melawai beach where you can see the sunset and enjoy a dinner at the beach.</p>
+                        <p>-Return to the hotel</p>
+                        <p>    
+                            Day 3: Balikpapan - Kutai Kartanegara
+                            
+                        </p>
+                        <p>-Visit recreation park of Kumala island to see kalimantan's culture which is a mix of the tribe of kutai, dayak, and javanese.</p>
+                        <p>-Visit Kedaton Kutai Kartanegara and Mulawarman museum.</p>
+                        <p>-Go to the hotel to check in</p>
+                        <p>
+                            Day 4: Kutai Kartanegara - Samarinda
+        
+                        </p>
+                        <p>-Visit Budaya Pampang village which belong
+                            to the tribe of Dayak at Samarinda city</p>
+                        <p>-Transfer to the hotel continued with free session</p>
+                                               
+                        <p>
+                            Day 6: Samarinda - Sepinggan airport - Balikpapan - Berau - Derawan                          
+                        </p>
+                        
+                        <p>-Transfer to Sepinggan airport at Balikpapan city to visit Berau city</p>
+                        <p>-Transfer to Tanjung Batu
+                            through the road</p>
+                        <p>-Transfer to Derawan island by boat </p>
+                        <p>-Check in at Hotel</p>
+                        <p>-See the turtle spawning their eggs if there is some</p>
+                        <p>-Free session and back to the hotel</p>
+                        
+                         <p>
+                            Day 7: Derawan Island - Maratua Island - Kakhban island - Sangalaki Island
+                                                        
+                        </p>
+                         <p>-After breakfast, A fullday tour to visit 3 islands starting from Maratua island,
+                            kakhban island, and sangalaki island.</p>
+                         <p>-Return to Derawan island afterwards followed by banana boat.</p>
+                        <p>-Dinner and free session.</p>
+                        <p>Day 8: Derawan - Tarakan</p>
+                         <p>-After breakfast and check out,go around Derawan island for diving or sightseeing</p>
+                          <p>-Visit Tarakan island after lunch continued with check in at Hotel</p>
+                           <p>Day 9:Tarakan - Balikpapan</p>
+                            <p>-Check out</p>
+                            <p>-Transfer to Juwita airport to go to Balikpapan</p>
+                             <p>Transfer to Hotel continued with Free session</p>
+                        <p>Day 10 - Balikpapan - Departure</p>
+                        <p>-Breakfast continued with check out from the Hotel</p>
+                        <p>-Free session</p>
+                        <p>-Guided to Sepingan airport, Balikpapan to return to your home. </p>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#accordion > li').hover(
+                    function () {
+                        var $this = $(this);
+                        $this.stop().animate({'width':'480px'},500);
+                        $('.heading',$this).stop(true,true).fadeOut();
+                        $('.bgDescription',$this).stop(true,true).slideDown(1000);
+                        $('.description',$this).stop(true,true).fadeIn();
+                    },
+                    function () {
+                        var $this = $(this);
+                        $this.stop().animate({'width':'115px'},1000);
+                        $('.heading',$this).stop(true,true).fadeIn();
+                        $('.description',$this).stop(true,true).fadeOut(1000);
+                        $('.bgDescription',$this).stop(true,true).slideUp(700);
+                    }
+                );
+            });
+        </script>
+    </body>
+</html>

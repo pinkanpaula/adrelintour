@@ -1,0 +1,394 @@
+@import url('reset.css');
+body{
+	background:#f7f7f7 url(../images/pinstripe.gif) repeat top left;
+	color:#000;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size:12px;
+}
+a{
+	color:#000;
+	text-decoration:none;
+}
+header h1{
+	margin:10px 0 0 20px;
+	font-size:60px;
+	text-transform:uppercase;
+	text-shadow:0px 0px 1px #fff;
+	color:#444;
+	font-family: 'Wire One', arial, serif; 
+}
+header span{
+	font-style:italic;
+	font-size:20px;
+	margin:-10px 0 10px 188px;
+	display:block;
+	color:#555;
+	text-shadow:1px 1px 1px #fff;
+}
+.iw_wrapper{
+	width:70%;
+	margin:30px auto 100px auto;
+	position:relative;
+}
+ul.iw_thumbs li{
+	float:left;
+	margin:5px;
+}
+ul.iw_thumbs li div{
+	position:absolute;
+	top:5px;
+	width:180px;
+	padding:0px 10px;
+	display:none;
+	color:#fff;
+	z-index:100;
+}
+ul.iw_thumbs li div h2{
+	font-family: 'Wire One', arial, serif;
+	font-size:38px;
+	text-transform:uppercase;
+	text-shadow:0px 0px 1px #fff;
+}
+ul.iw_thumbs li div p{
+	font-size:11px;
+	line-height:16px;
+	font-style:italic;
+}
+ul.iw_thumbs li:nth-child(1){
+	margin-left:50px;
+}
+ul.iw_thumbs li:nth-child(even){
+	margin-top:30px;
+}
+ul.iw_thumbs li:nth-child(3n){
+	margin-left:20px;
+}
+ul.iw_thumbs li img{
+	border:7px solid #fff;
+	cursor:pointer;
+	position:relative;
+	-moz-box-shadow:1px 1px 1px #aaa;
+	-webkit-box-shadow:1px 1px 1px #aaa;
+	box-shadow:1px 1px 1px #aaa;
+}
+ul.iw_thumbs li img:hover{
+	-moz-box-shadow:1px 1px 7px #777;
+	-webkit-box-shadow:1px 1px 7px #777;
+	box-shadow:1px 1px 7px #777;
+}
+ul.iw_thumbs li:nth-child(even) img{
+	height:20px;
+}
+ul.iw_thumbs li:nth-child(odd) img{
+	height:40px;
+}
+ul.iw_thumbs li:nth-child(5n) img{
+	height:70px;
+}
+ul.iw_thumbs li:nth-child(6n) img{
+	height:110px;
+}
+ul.iw_thumbs li:nth-child(7n) img{
+	height:20px;
+}
+.iw_ribbon{
+	position:fixed;
+	height:126px; /*first 126 then 0 to close and 100% to open (while top goes to 0) */
+	width:0px;/*first 0 then animate to 100%*/
+	left:0px;/*or right 0*/
+	top:0px; /*First, top of thumb, then animate to 0*/
+	background:#000;
+	opacity:0.8;
+	z-index:10;
+	overflow:hidden;
+	display:none;
+}
+.iw_close{
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:#f0f0f0 url(../images/close.gif) no-repeat center center;
+	width:18px;
+	height:18px;
+	display:none;
+	cursor:pointer;
+}
+.iw_zoom{
+	color:white;
+	font-size:8px;
+	font-family:Arial, sans-serif;
+	text-transform:uppercase;
+	padding:14px;
+	display:none;
+	float:right;
+	margin-right:30px;
+}
+.iw_ribbon img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	border:7px solid #fff;
+}
+.iw_loading{
+	background: #fff url(../images/loader.gif) no-repeat center center;
+	width:28px;
+	height:28px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10000;
+	margin: -14px 0px 0px -14px;
+	opacity:0.8;
+}
+/* Footer Style */
+.footer{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	font-size:13px;
+	background:#000;
+	opacity:0.9;
+	height:20px;
+	padding-bottom:5px;
+	text-transform:uppercase;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	z-index:4;
+}
+.footer a{
+	padding:5px 10px;
+	letter-spacing:1px;
+	text-shadow:1px 1px 1px #000;
+	color:#ddd;
+	float:right;
+}
+.footer a:hover{
+	color:#fff;
+}
+.footer a span{
+	font-weight:bold;
+}
+.footer a.left{
+	float:left;
+}
+
+.navigation{
+    margin: 0px auto;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+.navigation .item{
+    position:absolute;
+}
+
+.camera{
+   top:230px;
+   left:935px;
+}
+
+.packages{
+   top:230px;
+   left:35px;
+}
+
+.navigation .item a.active{
+    background-position:0px -52px;
+}
+.item img.circle{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:52px;
+    height:52px;
+    opacity:0.8	;
+}
+.item h2{
+    position:absolute;
+    width:147px;
+    height:52px;
+    color:#222;
+    font-size:18px;
+    top:0px;
+    left:52px;
+    text-indent:10px;
+    line-height:52px;
+    text-shadow:1px 1px 1px #fff;
+    text-transform:uppercase;
+}
+.item h2.active{
+    color:#fff;
+    text-shadow:1px 0px 1px #555;
+}
+.item ul{
+    list-style:none;
+    position:absolute;
+    top:60px;
+    left:25px;
+    
+}
+.item ul li a{
+    font-size:15px;
+    text-decoration:none;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:#222;
+    padding:3px;
+    float:left;
+    clear:both;
+    width:100px;
+    text-shadow:1px 1px 1px #fff;
+}
+.item ul li a:hover{
+    background-color:#fff;
+    color:#444;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    -moz-box-shadow:1px 1px 4px #666;
+    -webkit-box-shadow:1px 1px 4px #666;
+    box-shadow:1px 1px 4px #666;
+}
+
+ul.accordion{
+    list-style:none;   
+    position:absolute;
+    right:80px;
+    top:0px;
+    font-family: Cambria, serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5em;
+}
+ul.accordion li{
+    float:right;
+    width:115px;
+    height:900px;
+    display:block;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    background-position:center center;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    -moz-box-shadow:1px 3px 15px #555;
+    -webkit-box-shadow:1px 3px 15px #555;
+    box-shadow:1px 3px 15px #555;
+}
+ul.accordion li.bg1{
+    background-image:url(../images/bromo.jpg);
+}
+ul.accordion li.bg2{
+    background-image:url(../images/manado2.jpg);
+}
+ul.accordion li.bg3{
+    background-image:url(../images/rampat.jpg);
+}
+ul.accordion li.bg4{
+    background-image:url(../images/derawan.jpg);
+}
+ul.accordion li.bleft{
+    border-left:2px solid #fff;
+}
+ul.accordion li .heading{
+    background-color:#fff;
+    padding:10px;
+    margin-top:60px;
+    opacity:0.9;
+    text-transform:uppercase;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-size:14px;
+    color:#444;
+    text-align:center;
+    text-shadow:-1px -1px 1px #ccc;
+
+}
+ul.accordion li .description{
+    position:absolute;
+    width:480px;
+    height:175px;
+    top: 10px;
+    bottom:0px;
+    left:0px;
+    display:none;
+    overflow: auto;
+}
+ul.accordion li .description h2{
+    text-transform:uppercase;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-size:25px;
+    color:#444;
+    text-align:left;
+    margin:0px 0px 15px 20px;
+    text-shadow:-1px -1px 1px #ccc;
+}
+ul.accordion li .description p{
+    line-height:14px;
+    margin:10px 22px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight:bold;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.6em;
+    
+}
+ul.accordion li .description a{
+    position:absolute;
+    bottom:5px;
+    left:20px;
+    text-transform:uppercase;
+    font-style:normal;
+    font-size:11px;
+    text-decoration:none;
+    color:#888;
+}
+ul.accordion li .description a:hover{
+    color:#333;
+    text-decoration:underline;
+}
+
+ul.accordion li .bgDescription{
+    background:transparent url(../images/bgDescription.png) repeat-x top left;
+    height:340px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    display:none;
+}
+
+.contactl{
+   position: relative;
+   left: 370px;
+   top: 40px;
+   font-family: "Trebuchet MS", sans-serif;
+   font-size:15px;
+   
+}
+
+.contactv{
+   position: relative;
+   left: 570px;
+   top: 20px;
+   font-family: "Trebuchet MS", sans-serif;
+   font-size:15px;
+}
+
+.lineContact{
+    height: 90px;
+    border-bottom: 1px solid #c7deef;
+    border-top:1px solid #fff;
+    overflow: hidden;    
+
+}
